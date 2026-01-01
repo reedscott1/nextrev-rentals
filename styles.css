@@ -1014,6 +1014,15 @@ p {
     visibility: visible;
   }
 
+  .nav .nav-link {
+    color: var(--gray-600);
+  }
+
+  .nav .nav-link:hover,
+  .nav .nav-link.active {
+    color: var(--black);
+  }
+
   .menu-toggle {
     display: flex;
   }
