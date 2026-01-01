@@ -111,10 +111,28 @@ p {
   transition: all 0.3s ease;
 }
 
-.header.scrolled {
+.header.scrolled,
+.header.header-solid {
   background: var(--white);
   border-bottom-color: var(--gray-100);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+}
+
+.header.header-solid .logo-sub {
+  color: var(--gray-600);
+}
+
+.header.header-solid .nav-link {
+  color: var(--gray-600);
+}
+
+.header.header-solid .nav-link:hover,
+.header.header-solid .nav-link.active {
+  color: var(--black);
+}
+
+.header.header-solid .menu-toggle span {
+  background: var(--black);
 }
 
 .header .container {
