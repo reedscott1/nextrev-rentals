@@ -832,6 +832,46 @@ p {
   resize: vertical;
 }
 
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+}
+
+.form-row .form-group {
+  margin-bottom: 0;
+}
+
+.form-group label .optional {
+  font-weight: 400;
+  color: var(--medium-gray);
+  font-size: 0.85em;
+}
+
+.form-group input[type="date"] {
+  cursor: pointer;
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+.form-checkbox input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+  cursor: pointer;
+  accent-color: var(--orange);
+}
+
+.form-checkbox label {
+  margin-bottom: 0;
+  cursor: pointer;
+  font-weight: 400;
+}
+
 .form-submit {
   margin-top: var(--space-md);
 }
@@ -1107,5 +1147,9 @@ p {
 
   .contact-form-wrapper {
     padding: var(--space-lg);
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
   }
 }
