@@ -709,6 +709,43 @@ p {
   flex-shrink: 0;
 }
 
+/* ===== FLEET & PRICING SECTION ===== */
+.fleet-pricing-section {
+  padding: var(--space-2xl) 0;
+  background: var(--off-white);
+  border-top: 1px solid var(--gray-100);
+}
+
+.fleet-pricing-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2xl);
+}
+
+.fleet-card,
+.pricing-card {
+  background: var(--white);
+  padding: var(--space-xl);
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.fleet-card h2,
+.pricing-card h2 {
+  margin-bottom: var(--space-md);
+  color: var(--black);
+}
+
+.fleet-card > p,
+.pricing-card > p {
+  color: var(--gray-600);
+  margin-bottom: var(--space-md);
+}
+
+.pricing-card .btn {
+  margin-top: var(--space-sm);
+}
+
 /* ===== CONTACT PAGE ===== */
 .contact-section {
   padding: var(--space-2xl) 0;
@@ -1033,6 +1070,11 @@ p {
 
   .about-content {
     padding-right: 0;
+  }
+
+  .fleet-pricing-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
   }
 
   .services-grid {
